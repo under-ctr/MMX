@@ -1,0 +1,16 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd,1639237719,vhdl,,,,main,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/MainControl.vhd,1639156327,vhdl,,,,maincontrol,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/REG_FILE.vhd,1641175763,vhdl,,,,reg_file,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd,1639169111,vhdl,,,,adder,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd,1639250082,vhdl,,,,adder_16bits,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd,1639251133,vhdl,,,,adder_32bits,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd,1639341044,vhdl,,,,adder_8bits,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd,1641176234,vhdl,,,,alu16,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd,1641176514,vhdl,,,,alu32,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu64.vhd,1637562648,vhdl,,,,alu64,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd,1640732714,vhdl,,,,alu8,,,,,,,,
+E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/mux15_1.vhd,1637435976,vhdl,,,,mux15_1,,,,,,,,

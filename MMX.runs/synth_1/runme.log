@@ -1,0 +1,492 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+Command: synth_design -top Main -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11244 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 282.539 ; gain = 72.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:43]
+INFO: [Synth 8-3491] module 'MainControl' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/MainControl.vhd:34' bound to instance 'semnale' of component 'MainControl' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/MainControl.vhd:44]
+INFO: [Synth 8-226] default block is never used [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/MainControl.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (1#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/MainControl.vhd:44]
+INFO: [Synth 8-3491] module 'REG_FILE' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/REG_FILE.vhd:36' bound to instance 'rgistru' of component 'REG_FILE' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'REG_FILE' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/REG_FILE.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'REG_FILE' (2#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/REG_FILE.vhd:48]
+INFO: [Synth 8-3491] module 'alu64' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu64.vhd:36' bound to instance 'ALU64Biti' of component 'alu64' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'alu64' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu64.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'alu64' (3#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu64.vhd:45]
+INFO: [Synth 8-3491] module 'alu32' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:36' bound to instance 'ALU32Biti1' of component 'alu32' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'alu32' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:45]
+INFO: [Synth 8-3491] module 'adder_32bits' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:34' bound to instance 'Add' of component 'adder_32bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'adder_32bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:43]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M1' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:42]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M2' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:66]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M3' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:67]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M4' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:68]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M5' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:69]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M6' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:70]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M7' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:71]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M8' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:72]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M9' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:73]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M10' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:74]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M11' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:75]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M12' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:76]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M13' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:77]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M14' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:78]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M15' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:79]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M16' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:80]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M17' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:81]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M18' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:82]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M19' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:83]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M20' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:84]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M21' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:85]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M22' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:86]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M23' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:87]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M24' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:88]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M25' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:89]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M26' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:90]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M27' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:91]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M28' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:92]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M29' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:93]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M30' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:94]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M31' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:95]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M32' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:96]
+WARNING: [Synth 8-3848] Net Cout in module/entity adder_32bits does not have driver. [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'adder_32bits' (5#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:43]
+INFO: [Synth 8-3491] module 'adder_32bits' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_32bits.vhd:34' bound to instance 'Sub' of component 'adder_32bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:65]
+WARNING: [Synth 8-614] signal 'comp' is read in the process but is not in the sensitivity list [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'alu32' (6#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:45]
+INFO: [Synth 8-3491] module 'alu32' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:36' bound to instance 'ALU32Biti2' of component 'alu32' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:155]
+INFO: [Synth 8-3491] module 'alu16' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:36' bound to instance 'ALU16Biti1' of component 'alu16' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'alu16' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:45]
+INFO: [Synth 8-3491] module 'adder_16bits' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:34' bound to instance 'Add' of component 'adder_16bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'adder_16bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:43]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M1' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:63]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M2' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:64]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M3' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:65]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M4' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:66]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M5' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:67]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M6' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:68]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M7' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:69]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M8' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:70]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M9' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:71]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M10' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:72]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M11' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:73]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M12' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:74]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M13' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:75]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M14' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:76]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M15' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:77]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M16' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:78]
+WARNING: [Synth 8-3848] Net Cout in module/entity adder_16bits does not have driver. [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'adder_16bits' (7#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:43]
+INFO: [Synth 8-3491] module 'adder_16bits' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_16bits.vhd:34' bound to instance 'Sub' of component 'adder_16bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'alu16' (8#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:45]
+INFO: [Synth 8-3491] module 'alu16' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:36' bound to instance 'ALU16Biti2' of component 'alu16' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:159]
+INFO: [Synth 8-3491] module 'alu16' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:36' bound to instance 'ALU16Biti3' of component 'alu16' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:160]
+INFO: [Synth 8-3491] module 'alu16' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:36' bound to instance 'ALU16Biti4' of component 'alu16' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:161]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti1' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:45]
+INFO: [Synth 8-3491] module 'adder_8bits' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:34' bound to instance 'Add' of component 'adder_8bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'adder_8bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:43]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M1' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:59]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M2' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:60]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M3' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:61]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M4' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:62]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M5' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:63]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M6' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:64]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M7' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:65]
+INFO: [Synth 8-3491] module 'adder' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder.vhd:34' bound to instance 'M8' of component 'adder' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:66]
+WARNING: [Synth 8-3848] Net Cout in module/entity adder_8bits does not have driver. [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'adder_8bits' (9#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:43]
+INFO: [Synth 8-3491] module 'adder_8bits' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/adder_8bits.vhd:34' bound to instance 'Sub' of component 'adder_8bits' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'alu8' (10#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:45]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti2' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:165]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti3' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:166]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti4' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:167]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti5' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:168]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti6' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:169]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti7' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:170]
+INFO: [Synth 8-3491] module 'alu8' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:36' bound to instance 'ALU8Biti8' of component 'alu8' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:171]
+INFO: [Synth 8-3491] module 'mux15_1' declared at 'E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/mux15_1.vhd:34' bound to instance 'mux4to1' of component 'mux15_1' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'mux15_1' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/mux15_1.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mux15_1' (11#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/mux15_1.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Main' (12#1) [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/Main.vhd:43]
+WARNING: [Synth 8-3331] design adder_8bits has unconnected port Cout
+WARNING: [Synth 8-3331] design adder_16bits has unconnected port Cout
+WARNING: [Synth 8-3331] design adder_32bits has unconnected port Cout
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 320.938 ; gain = 110.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 320.938 ; gain = 110.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 320.938 ; gain = 110.820
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+WARNING: [Synth 8-327] inferring latch for variable 'SigAluOut_reg' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu64.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'SigAluOut_reg' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu32.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'SigAluOut_reg' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu16.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'SigAluOut_reg' [E:/an3sem1/labSSCMIPS/MMX/MMX.srcs/sources_1/new/alu8.vhd:99]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 337.160 ; gain = 127.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 384   
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module alu64 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
+Module adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module alu32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module alu16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+Module alu8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module mux15_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[63]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[62]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[61]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[60]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[59]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[58]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[57]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[56]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[55]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[54]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[53]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[52]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[51]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[50]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[49]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[48]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[47]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[46]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[45]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[44]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[43]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[42]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[41]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[40]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[39]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[38]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[37]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[36]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[35]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[34]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[33]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[32]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[31]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[30]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[29]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[28]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[27]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[26]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[25]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[24]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[23]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[22]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[21]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[20]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[19]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[18]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[17]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[16]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[15]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[14]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[13]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[12]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[11]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[10]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[9]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[8]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[7]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[6]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[5]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[4]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[3]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[2]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[1]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[0]) is unused and will be removed from module alu64.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[31]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[30]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[29]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[28]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[27]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[26]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[25]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[24]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[23]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[22]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[21]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[20]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[19]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[18]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[17]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[16]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[15]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[14]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[13]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[12]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[11]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[10]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[9]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[8]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[7]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[6]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[5]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[4]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[3]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[2]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[1]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[0]) is unused and will be removed from module alu32__1.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[31]) is unused and will be removed from module alu32.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[30]) is unused and will be removed from module alu32.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[29]) is unused and will be removed from module alu32.
+WARNING: [Synth 8-3332] Sequential element (SigAluOut_reg[28]) is unused and will be removed from module alu32.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------+-----------+----------------------+-----------------+
+|Main        | rgistru/mem_reg | Implied   | 8 x 64               | RAM16X1D x 64   | 
++------------+-----------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    14|
+|3     |LUT2     |    41|
+|4     |LUT3     |    89|
+|5     |LUT4     |    48|
+|6     |LUT5     |   222|
+|7     |LUT6     |   392|
+|8     |RAM16X1D |    64|
+|9     |IBUF     |    12|
+|10    |OBUF     |    64|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------+---------+------+
+|      |Instance  |Module   |Cells |
++------+----------+---------+------+
+|1     |top       |         |   947|
+|2     |  mux4to1 |mux15_1  |   104|
+|3     |  rgistru |REG_FILE |   766|
++------+----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 267 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 492.645 ; gain = 282.527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 492.645 ; gain = 282.527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 536.273 ; gain = 326.156
+INFO: [Common 17-1381] The checkpoint 'E:/an3sem1/labSSCMIPS/MMX/MMX.runs/synth_1/Main.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 536.273 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 03 09:31:22 2022...

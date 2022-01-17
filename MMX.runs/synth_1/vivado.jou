@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 03 09:30:50 2022
+# Process ID: 20184
+# Current directory: E:/an3sem1/labSSCMIPS/MMX/MMX.runs/synth_1
+# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: E:/an3sem1/labSSCMIPS/MMX/MMX.runs/synth_1/Main.vds
+# Journal file: E:/an3sem1/labSSCMIPS/MMX/MMX.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace
