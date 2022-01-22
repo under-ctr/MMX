@@ -77,6 +77,7 @@ Exemplu:
 	
 
  Instrucțiunea 
+ 
 ![14](https://user-images.githubusercontent.com/70382324/150641812-6969bb53-041b-4220-8a07-179291abd656.png)
  
 Este formată din 11 biti. Biti de la 10..9 sunt folosiți pentru a alege pachetul de date:
